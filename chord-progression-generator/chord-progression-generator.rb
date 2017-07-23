@@ -41,7 +41,7 @@ end
     7.times do |triad3|
       7.times do |triad4|
         # Filter into a more managable set.
-        if [triad1, triad2, triad3, triad4].include? 0
+        if chord_progression_filter([triad1, triad2, triad3, triad4])
           name = "#{triad1+1}#{triad2+1}#{triad3+1}#{triad4+1}-#{MODE_HUMAN_NAME}"
           print "#{name}...\n"
 
